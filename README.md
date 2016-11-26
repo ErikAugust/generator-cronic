@@ -1,6 +1,10 @@
 # generator-cronic [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > File generator for the Cronic PHP Framework
 
+```generator-cronic``` is used by Cronic to generate initial application configuration files, as well as by the file generator tool.
+
+![Cronic](https://raw.githubusercontent.com/ErikAugust/cronic/master/cronic.jpg)
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-cronic using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
@@ -10,18 +14,16 @@ npm install -g yo
 npm install -g generator-cronic
 ```
 
+Then install ```cronic```:
+```bash
+npm install -g cronic
+```
+
 Then generate your new project:
 
 ```bash
-yo cronic
+cronic start [name]
 ```
-
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
 ## License
 
