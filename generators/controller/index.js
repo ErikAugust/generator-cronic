@@ -10,8 +10,13 @@ module.exports = yeoman.Base.extend({
     var prompts = [
       {
         type: 'input',
-        name: 'controllerName',
-        message: 'Enter name of controller used by route'
+        name: 'name',
+        message: 'Enter name of controller'
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Enter description of controller'
       }
     ];
 
@@ -22,6 +27,10 @@ module.exports = yeoman.Base.extend({
   },
 
   writing: function () {
-
+    this.fs.copyTpl(
+      this.templatePath('_Controller.txt'),
+      this.destinationPath('php/controllers/' + this.props.name + 'Controller.php'),
+      {data: this.props}
+    );
   }
 });

@@ -1,10 +1,21 @@
 <?php
 namespace controllers;
 
+use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 
-class AppController {
+/**
+ * Class <%= data.name %>Controller
+ * @package controllers
+ * @description <%= data.description %>
+ */
+class <%= data.name %>Controller {
+
+    /**
+     * @name testAction
+     * @return Application
+     */
     public function testAction(Application $app) {
-        return new Response("Hello world!");
+        return $app->json(array('response' => 'Hello world!'));
     }
 }
