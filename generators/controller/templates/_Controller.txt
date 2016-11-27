@@ -1,0 +1,10 @@
+<?php
+namespace controllers;
+
+use Silex\Application;
+
+class AppController {
+    public function testAction(Application $app) {
+        return new Response("Hello world!");
+    }
+}
