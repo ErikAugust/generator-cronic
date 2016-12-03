@@ -1,6 +1,6 @@
 {
   "name": "generator-cronic",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Yeoman-based file generator for the Cronic PHP Framework",
   "homepage": "https://github.com/ErikAugust/cronic",
   "author": {

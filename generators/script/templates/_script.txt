@@ -1,0 +1,15 @@
+<?php
+include_once(__DIR__.'<%= data.fileLocation %>/../base.php');
+use models\Base;
+
+/**
+ * @name <%= data.name %>.php
+ * @description <%= data.description %>
+ * @usage php <%= data.name %>.php [arguments]
+ * @usage cronic run <%= data.name %> [arguments]
+ */
+
+$database = isset($argv[1]) ? $argv[1] : 'default';
+$base = new Base($database);
+
+echo "\r\nThis is an example!!!\r\n\r\n";
